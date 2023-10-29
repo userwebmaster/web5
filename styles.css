@@ -35,6 +35,11 @@ background-color: #b7985a;
 max-width: 90%;
 max-height: 80%;
 }
+.video-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .video-text{
 text-align: center;
 }
