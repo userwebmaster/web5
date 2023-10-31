@@ -7,22 +7,48 @@ color: white;
 font-family: 'Lovelo';
 background-color: black;
 }
-.my-custom-code{
-
-}
 @font-face {
 font-family: 'Lovelo';
 src: url(fonts/Lovelo\ Black.otf);
 }
+@media (max-width:992px){
+    .display-6{
+        font-size: 6cqi !important;
+    }
+    .fs-2{
+        font-size: 4cqi !important;
+    }
+    .fs-3{
+        font-size: 3.8cqi !important;
+    }
+    .fs-5{
+        font-size: 3cqi !important;
+    }
+    .fs-6{
+        font-size: 2.5cqi !important;
+    }
+    .fs-7{
+        font-size: 2cqi !important;
+    }
+    .btn-outline-gold{
+        font-size: 2.5cqi !important;
+        }
+    .p-10{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
 .btn{
-    --bs-btn-padding-x: 0.8rem;
-    --bs-btn-padding-y: 0.4rem;
+    --bs-btn-padding-x: 0.9rem;
+    --bs-btn-padding-y: 0.6rem;
 }
 .btn-outline-gold{
 font-size: small;
 border-radius: 50px;
 border: 1.5px solid #b7985a;
 color: #b7985a;
+background-color: transparent;
 }
 .btn-outline-gold:hover{
 color: black;
@@ -79,11 +105,14 @@ justify-content: center;
 align-items: center;
 }
 .vysledok{
-max-width: 90%;
-max-height: 90%;
+
+}
+.vysledok1, .vysledok2, .vysledok3{
+    width: 70%;
+    height: 100%;
 }
 .golden{
-color: #b7985a;
+    color: #b7985a;
 }
 
 .purple{
@@ -114,4 +143,13 @@ color: #b7985a;
     height: 100%;
     padding-top: 3%;
 }
-
+.img1{
+    max-width: 80%;
+    max-height: 80%;
+    }
+.end-logo{
+    max-width: 15%;
+}
+.clickable:hover{
+    cursor: pointer;
+}

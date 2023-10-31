@@ -30,7 +30,7 @@
         </div>
     </nav> -->
        <!-- Navbar -->
-       <nav class=" navbar navbar-dark navbar-expand-lg col-lg-12 col-sm-6 ">
+       <nav class="navbar navbar-dark navbar-expand-lg col-lg-12 col-sm-6" id="nav">
           <a class="navbar-brand" href="#"><img src="images/grindset-logo-text.png" alt="" width="35%"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -43,21 +43,21 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav  gap-3 flex-grow-1">
                 <li class="nav-item ">
-                  <a class="nav-link active" aria-current="page" href="#">Domov</a>
+                  <a class="nav-link active" aria-current="page" href="#nav">Domov</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Obsah
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Obsah Grindset Academy</a></li>
-                    <li><a class="dropdown-item" href="#">Čo je Grindset Academy?</a></li>
-                    <li><a class="dropdown-item" href="#">Výhody</a></li>
-                    <li><a class="dropdown-item" href="#">Požiadavky</a></li>
+                    <li><a class="dropdown-item" href="#obsah">Obsah Grindset Academy</a></li>
+                    <li><a class="dropdown-item" href="#ogrindsete">Čo je Grindset Academy?</a></li>
+                    <li><a class="dropdown-item" href="#výhody">Výhody</a></li>
+                    <li><a class="dropdown-item" href="#požiadavky">Požiadavky</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Výsledky</a>
+                    <a class="nav-link" aria-current="page" href="#výsledky">Výsledky</a>
                 </li>
                 <li>
                     <hr class="navbar-divider">
@@ -70,10 +70,11 @@
           </div>
       </nav>
      <!-- Navbar End -->
-    <div class="container">
+
+    <div class="container p-10">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 gap-10 my-custom-code gx-5">
              <!-- Video Container -->
-            <div class="col-sm-12 col-md-12 col-lg-12 video-text-container">
+            <div class="col-sm-12 col-md-12 col-lg-12 video-text-container p-5">
                     <div class="row row-cols-1 d-flex justify-content-center">
                         <div class="col-lg-12 video-text py-3">
                           <p class="display-6">side hustle, ktorý nikde inde nenájdeš</p>
@@ -84,11 +85,15 @@
                     </div>
             </div>
             <!-- Video Container End -->
-            <!-- Obsah Text Container -->
+
+            <!-- Obsah Img Container -->
             <div class="col-lg-6 d-flex justify-content-center align-items-center">
               <img src="images/grindset-logo.png" alt="logo" class="logo">
             </div>
-            <div class="col-lg-6 p-5">
+            <!-- Obsah Img Container End -->
+
+            <!-- Obsah Text Container -->
+            <div class="col-lg-6 p-5" id="obsah">
                 <p class="fs-5"><span class="golden">GrindSet Academy</span> je zameraná na krypto a Web3 jobs.</p>
                 <p class="display-6">Obsah <span class="golden">Grindsetu</span></p>
                 <ul class="fs-5">
@@ -102,49 +107,139 @@
                 </ul>
                 <button class="btn btn-outline-gold me-2" type="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScVzCq7ARFSscQACXhIhkE5M_Nx83m6GFQQzLTy76HOJosaWw/viewform?usp=sf_link'">Chcem Miesto</button>
             </div>
-            <div class="col-lg-12">
-              <div class="row row-cols-lg-3 row-cols-sm-1">
-                  <div class="col-lg-12 display-6 text-center p-5">Grindset Výsledky</div>
-                  <div class="col-sm-12 vysledok-container"><img src="" alt="vysledok1" class="vysledok1 vysledok"></div>
-                  <div class="col-sm-12 vysledok-container"><img src="" alt="vysledok2" class="vysledok2 vysledok"></div>
-                  <div class="col-sm-12 vysledok-container"><img src="" alt="vysledok3" class="vysledok vysledok3"></div>
+            <!-- Obsah Text Container End -->
+
+            <!-- Výsledky1 Container -->
+            <div class="col-lg-12 py-5" id="výsledky">
+              <div class="row">
+                  <div class="col-lg-12 col-sm-12 text-center p-5 display-6">Grindset Výsledky</div>
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img1.png" alt="vysledok1" class="vysledok1 vysledok"></div>
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img2.png" alt="vysledok2" class="vysledok2 vysledok"></div>
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img3.png" alt="vysledok3" class="vysledok vysledok3"></div>
               </div>
             </div>
-            <div class="col-lg-12">
+            <!-- Výsledky1 Container End -->
+
+            <!-- O grindsete Container -->
+            <div class="col-lg-12 py-5" id="ogrindsete">
               <div class="row row-cols-1">
                 <div class="col-lg-12 text-center display-6 pu-5">Čo je <span class="golden">Grindset Academy?</span></div>
                 <div class="col-lg-12 px-5 py-3 text-center fs-5">Grindset Academy sme založili s presvedčením, že cesta k naplneniu <span class="golden">životného štýlu snov</span>, nie je taká zložitá, ako sa môže zdať. Sú potrebné správne informácie, ľudia, motivácia a disciplína, s týmito zložkami môžete určite dosiahnuť svoje ciele.<br><br>GrindSet Academy vám poskytuje <span class="golden">prístup k správnym ľuďom a informáciám</span> o online prácach a krypte, spolu s RADAMI PROFESIONáLOV.</div>
               </div>
             </div>
-            <div class="col-sm-12">
-              <div class="row"></div>
-            </div>
-            <div class="col-sm-12"><div class="p-3 border bg-light">Text1-Img</div></div>
-            <div class="col-sm-12"><div class="p-3 border bg-light">Text2</div></div>
-            <div class="col-sm-12"><div class="p-3 border bg-light">Text2-Img</div></div>
-            <div class="col-lg-12"><div class="p-3 border bg-light">Faq</div></div>
-            <div class="col-lg-12"><div class="p-3 border bg-light">Porozmyslaj</div></div>
-            <div class="col-lg-12"><div class="p-3 border bg-light">Vysledky2</div></div>
-            <div class="col-lg-12"><div class="p-3 border bg-light">Footer</div></div>
+            <!-- O grindsete Container End -->
 
+            <!-- Text1 Text Container -->
+            <div class="col-sm-12 col-lg-6 p-5 d-flex justify-content-center align-items-center" id="výhody">
+              <div class="row">
+                <div class="col-12 display-6 mb-2">Prečo <span class="golden">Grindset?</span><br></div>
+                <div class="col-12 fs-5 mb-5">Presne uvidíte, čo treba urobiť krok po kroku, aby ste mali základy na mieste, skôr než investujete svoje prvé peniaze.</div>
+                <ul class="fs-5">
+                  <li class="mb-5">Profesionálna <span class="golden">online prítomnosť</span></li>
+                  <li class="mb-5"><span class="golden">Vyniknutie z konkurencie</span> (TÝM, žE TENTO SEKTOR NIE JE PRESATUROVANý)</li>
+                  <li class="mb-5">Poskytnutie <span class="golden">softvérov/ AI,</span> ktoré budete potrebovať na dosiahnutie šesťciferných čísel
+                  </li>
+                  <li class="mb-5">možnosť <span class="golden">Práce z hocikaďiaľ</span></li>
+              </ul>
+              </div>
+            </div>
+            <!-- Text1 Text Container End -->
+
+            <!-- Text1 Img Container -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center ">
+              <img src="images/text1-img.png" alt="image1" class="img1">
+            </div>
+            <!-- Text1 Img Container End -->
+
+            <!-- Text2 Img Container -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center ">
+              <img src="images/text2-img.png" alt="image1" class="img1">
+            </div>
+            <!-- Text2 Img Container End -->
+
+            <!-- Text2 Text Container -->
+            <div class="col-sm-12 col-lg-6 p-5 d-flex justify-content-center align-items-center" id="požiadavky">
+              <div class="row">
+                <div class="col-12 display-6 mb-2">Požiadavky</div>
+                <ul class="fs-5">
+                  <li class="mb-5">Pre vstup do Grindset Academy treba najprv <span class="golden">vyplniť formulár</span>, v ktorom nám o sebe povieš</li>
+                  <li class="mb-5">Na základe tohto formulára <span class="golden">posúdime</span>, či si správny kandidát. Ak áno, PôJDEME s tebou na <span class="golden">hovor</span>, alebo ak to nie je potrebné, <span class="golden">napíš nám</span> cez Instagram.</li>
+                  <li class="mb-5">Pamätaj, že nie každý bude prijatý, takže ti prajem veľa šťastia</li>
+                </ul>
+                <div class="col"><button class="btn btn-outline-gold me-2" type="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScVzCq7ARFSscQACXhIhkE5M_Nx83m6GFQQzLTy76HOJosaWw/viewform?usp=sf_link'">Formulár</button></div>
+              </div>
+            </div>
+            <!-- Text2 Text Container End -->
+
+            <!-- FAQ Container Start -->
+            <div class="col-lg-12 text-left">
+              <div class="row d-flex justify-content-evenly mb-5">
+                <div class="col-12 display-6 mb-5 text-center">FAQ</div>
+                <div class="col-sm-12 col-lg-5">
+                  <p class="golden fs-3 my-2">Pre koho je GrindSet Academy?</p>
+                  <p class="fs-6 mb-5">GrindSet Academy je vhodná pre MAKAČOV, ktorí majú záujem o kariéru v oblastiach Crypto a Web3. Bez ohľadu na to, či si začiatočník alebo skúsený profesionál, naše zdroje a mentorstvo vám môžu pomôcť posunúť sa v kariére vpred.</p>
+
+                  <p class="golden fs-3 my-2">Mám na to aj keď som sprostý?</p>
+                  <p class="fs-6 mb-5">ANO, LEN BUDEŠ MUSIEŤ VIAC DRiEŤ</p>
+
+                  <p class="golden fs-3 my-2">Aké témy pokrývajú videá?</p>
+                  <p class="fs-6 mb-5">Naše video obsahuje široký zoznam tém súvisiacich s Crypto a Web3, vrátane obchodovania s kryptomenami, DeFi, NFT, smart kontraktov ATĎ. Nájdete obsah vhodný pre začiatočníkov aj pokročilých študentov.</p>
+                </div>
+
+                <div class="col-sm-12 col-lg-5">
+                  <p class="golden fs-3 my-2">Ako mi môže pomôcť KOMUNITA?</p>
+                  <p class="fs-6 mb-5">GrindSet je IBA na pozvanie pre ambicióznych jednotlivcov. Spoločne objavujeme nové príležitosti a rozvíjame projekty prostredníctvom vynikajúceho networkingu v našej komunite.</p>
+
+                  <p class="golden fs-3 my-2">JE TO ZADARMO?</p>
+                  <p class="fs-6 mb-5">NIE, ALE DALI SME To ZA SYMBOLICKú CENU, KOTRú SA DOZVIEš NA PRiVATE HOVORE S NAMI, POTOM čO SA NáM Osvečíš, žE SI DOBRý FIT do našej akadémie pomojcou VYPLNENia FORMULáru</p>
+
+                  <p class="golden fs-3 my-2">Čo sú web3 jobs?</p>
+                  <p class="fs-6 mb-5">ponúkanie služieb krypto tímom</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Container End -->
+
+            <!-- Porozmýšľaj Container -->
+            <div class="col-lg-12 p-5">
+              <div class="row row-cols-1">
+                <div class="col-lg-12 text-center fs-2">porozmýšľaj nad touto možnosťou</div>
+                <div class="col-lg-12 px-5 py-3 text-center fs-5">AK SA CHCEš STAť FINAčNE NEzAVYSLým, tAK My TI VIEME OTVOriť túto bráNu, práve pomocou
+                  grindset akadémie, JEDINé čO ti zostáva JE TO, či SI OCHOtný popracovať na SebE A
+                  VENOVAť tomu svoj čas a energiu</div>
+              </div>
+            </div>
+            <!-- Porozmýšľaj Container End -->
+
+            <!-- Výsledky2 Container -->
+            <div class="col-lg-12 py-5">
+              <div class="row">
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img4.png" alt="vysledok1" class="vysledok1 vysledok"></div>
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img5.png" alt="vysledok2" class="vysledok2 vysledok"></div>
+                  <div class="col-sm-12 col-lg-4 vysledok-container"><img src="images/vysledky-img6.png" alt="vysledok3" class="vysledok vysledok3"></div>
+                  <div class="col-sm-12 col-lg-12 fs-3 text-center mt-5 mb-3">ak si ešte tak nespravil</div>
+                  <div class="col-sm-12 col-lg-12 d-flex justify-content-center align-items-center"><button class="btn btn-outline-gold me-2" type="button" onclick="window.location.href=''">Join telegram</button></div>
+              </div>
+            </div>
+            <!-- Výsledky2 Container End -->
+
+            <!-- Footer Container -->
+            <div class="col-lg-12">
+              <div class="row row-cols-1">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center mb-5 mt-4">
+                  <img src="images/grindset-logo.png" alt="logo" class="end-logo">
+                </div>
+                <div class="col-lg-12 fs-7 text-center mb-3">Copyright 2023, grindset academy, All rights reserved.</div>
+                <div class="col-lg-12 fs-7 text-center">
+                  <p class="clickable"><span onclick="window.location.href='terms-disclaimer-privacy.html'">Terms</span> | 
+                    <span onclick="window.location.href='terms-disclaimer-privacy.html'">Disclaimer</span> | 
+                    <span onclick="window.location.href='terms-disclaimer-privacy.html'">Privacy</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Container End -->
         </div>
     </div>
-    <!--  
-    <div class="row">
-        <div class="col-lg-4 offset-2">Col 1</div>
-        <div class="col-lg-4 offset-1">Col 2</div>
-    </div>
-    <div class="row my-custom-code justify-content-center align-items-center gx-5 gy-10">
-        <div class="col-lg-4"><div class="p-3 border bg-light">Col 1</div></div>
-        <div class="col-lg-4"><div class="p-3 border bg-light">Col 2</div></div>
-    </div>
-    <div class="row row-cols-sm-1 row-cols-lg-2 gy-10 my-custom-code">
-        <div class="col"><div class="p-3 border bg-light">Col 1</div></div>
-        <div class="col"><div class="p-3 border bg-light">Col 2</div></div>
-        <div class="col"><div class="p-3 border bg-light">Col 3</div></div>
-        <div class="col"><div class="p-3 border bg-light">Col 4</div></div>
-    </div>
-    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
